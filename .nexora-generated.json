@@ -3,13 +3,13 @@
   "environment": "dev",
   "files": {
     ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
-    "README.md": "c85183083790e3f2ff14314a1c1d401956c4905d8bf68e371f0a4691a78e65c2",
+    "README.md": "e58c67f4fccb6d2b4782501e3b305ee38e0e890823b3ac2a1f41e73dcf4ccd14",
     "skills/nexora-dev/SKILL.md": "1e7f56cacc44b123aea33cec4703d5aaad1c8afadb4e9f538b3b16c92b3f122e",
-    "skills/nexora-dev/assets/nexora-cli-0.3.0.tgz": "6de9aca138517dd42e4083709dfc934aaeb2e8434c38b645b32027d76c442dfc",
+    "skills/nexora-dev/assets/nexora-cli-0.3.0.tgz": "ab75d10a65cddf2e6f65856062e73624ce3efa2bd4cd2c21717aff7bbf6b2475",
     "skills/nexora-dev/environment.json": "60a55d7b1482fe3f1cec4495ca3d0642ada45f485f37453b97c062ed1a98bbb5",
     "skills/nexora-dev/references/commands.md": "9f8d003ed33ca6904461f69f8edb5850734d56103901e57261f36bc30c4deb5f",
     "skills/nexora-dev/references/recovery.md": "ee2f4ddc237070675d4cd76dad58e0522b10e37a852332c803c5afdeee719962",
     "skills/nexora-dev/references/setup.md": "3f69f092163b4030e28d6d54eb9caec8dd550aeaaf99e02c13de406236aed221",
-    "skills/nexora-dev/release.json": "6719e12bc088ddb5c7e4d62f62c13b6a3b13726420fd6d0fdaebbb4081834b01"
+    "skills/nexora-dev/release.json": "31b7f2b0d09955e93de1ca12ec4574a0d5acc5568e9180d4724241d7288601bc"
   }
 }
