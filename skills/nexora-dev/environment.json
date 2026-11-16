@@ -1,0 +1,9 @@
+{
+  "environment": "dev",
+  "profile": "terry",
+  "skillName": "nexora-dev",
+  "repository": "https://github.com/terryoyty/nexora-skills-dev.git",
+  "serverOrigin": "http://127.0.0.1:48080",
+  "frontendOrigin": "http://127.0.0.1:3001",
+  "allowHttp": true
+}
