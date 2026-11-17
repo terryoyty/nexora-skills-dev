@@ -127,7 +127,7 @@ macOS/Linux：同样从清单读取真实 tgz 路径，用 `sha256sum` 或 `shas
 
 ## OAuth（dev 环境）
 
-本 Skill 已配置 origin **`http://127.0.0.1:48080`**，无需用户提供地址。每条独立进程命令都要重新设置本环境变量和绝对入口。Windows PowerShell 示例：
+本 Skill 已配置服务基址 **`http://127.0.0.1:48080`**，无需用户提供地址。每条独立进程命令都要重新设置本环境变量和绝对入口。Windows PowerShell 示例：
 
 ```powershell
 $env:NEXORA_CONFIG_DIR = Join-Path $env:USERPROFILE '.nexora\dev'
@@ -137,7 +137,7 @@ $env:NEXORA_EXPECTED_SERVER = 'http://127.0.0.1:48080'
 & $nexoraCli auth status --json
 ```
 
-这是明确允许 HTTP 的开发环境；Agent 必须能访问该本机服务。 地址不含 `/server` 或 `/app-api`；不从前端业务 API 路径猜测 OAuth origin。连接失败报告 dev 服务不可达，不切换服务。
+这是明确允许 HTTP 的开发环境；Agent 必须能访问该本机服务。 基址已包含本环境网关路径（QA/Prod 为 `/server`，dev 无前缀）；原样使用，不删除或重复添加 `/server`，不附加 `/app-api`。连接失败报告 dev 服务不可达，不切换服务。
 
 CLI 自动发现 OAuth、登记公共客户端、生成 PKCE、监听本地回调并打开浏览器。Agent 直接启动并保持登录进程运行，等待用户在网页完成账号登录和同意，无需再问是否启动登录。浏览器未弹出时将 stderr 的授权地址提供给用户打开，不代替用户确认授权。登录完成后复核 status 的 server 和 identity，继续此前的生成或原 Run 恢复，不要求用户重复需求。不要把 Token 当作登录参数，也不读取凭据文件。
 
